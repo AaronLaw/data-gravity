@@ -17,11 +17,23 @@ def get_env_setting(setting):
         raise Exception(error_msg)
 
 
+# General Flask app settings
 DEBUG = get_env_setting('DEBUG')
 SECRET_KEY = get_env_setting('SECRET_KEY')
+
+# Relational database settings
+SQLALCHEMY_DATABASE_URI = get_env_setting('DATABASE_URL')
+
+# Redis
 REDIS_SERVER = get_env_setting('REDIS_SERVER')
 REDIS_PORT = get_env_setting('REDIS_PORT')
 REDIS_DB = get_env_setting('REDIS_DB')
+
+# Celery
+CELERY_BROKER_URL = get_env_setting('CELERY_BROKER_URL')
+CELERY_RESULT_BACKEND = get_env_setting('CELERY_RESULT_BACKEND')
+
+# Twilio API credentials
 TWILIO_ACCOUNT_SID = get_env_setting('TWILIO_ACCOUNT_SID')
 TWILIO_AUTH_TOKEN = get_env_setting('TWILIO_AUTH_TOKEN')
 TWILIO_NUMBER = get_env_setting('TWILIO_NUMBER')
