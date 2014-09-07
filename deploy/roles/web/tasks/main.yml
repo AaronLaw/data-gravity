@@ -1,0 +1,16 @@
+##
+# these scripts set up a complete web application stack that is connected
+# to the remote database backend the other deployment scripts set up
+#
+---
+
+- name: write .bashrc file 
+  template: src=.bashrc dest=~/
+
+- include: install_web_packages.yml
+- include: config_web_server.yml
+- include: clone_app_install_deps.yml
+- include: config_flask.yml
+- include: config_supervisor.yml
+
+

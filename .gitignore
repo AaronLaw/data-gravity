@@ -9,7 +9,7 @@
 assets
 tmp/
 setenvs.sh
-deploy/group_vars/all
+deploy/group_vars/
 deploy/fabfile.py
 deploy/hosts
 deploy/ssh_conf/

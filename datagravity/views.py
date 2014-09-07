@@ -8,6 +8,7 @@ from .tasks import get_github_followers
 def dashboard():
     return render_template('dashboard.html')
 
+
 @app.route('/refresh/github/', methods=['GET'])
 def refresh_github():
     get_github_followers.apply_async(args=['makaimc'])
