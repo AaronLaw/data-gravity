@@ -4,8 +4,13 @@
 #
 ---
 
-- name: write .bashrc file 
-  template: src=.bashrc dest=~/
+- name: add nginx repo to apt
+  shell: echo "deb http://nginx.org/packages/ubuntu/ precise nginx" >> /etc/apt/sources.list
+  sudo: yes
+
+- name: add nginx repo key
+  shell: apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ABF5BD827BD9BF62
+  sudo: yes
 
 - include: install_web_packages.yml
 - include: config_web_server.yml

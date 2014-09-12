@@ -16,16 +16,16 @@
     - db
 
 
-- name: deploy nginx and configure web servers
-  hosts: webservers
-  user: deployer
-  roles:
-    - web
-
-
 - name: configure Redis
   hosts: redis-servers
   user: deployer
   roles:
     - redis
+
+
+- name: deploy nginx and configure web server
+  hosts: webservers
+  user: deployer
+  roles:
+    - web
 

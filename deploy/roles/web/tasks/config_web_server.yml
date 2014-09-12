@@ -13,8 +13,8 @@
   when: ssldir.stat.isdir is not defined
 
 - name: write SSL certificate
-  template: src={{ ssl_certs_dir }}/{{ app_name }}.sslchain.crt 
-            dest=/etc/nginx/{{ app_name }}/{{ app_name }}.sslchain.crt
+  template: src={{ ssl_certs_dir }}/{{ app_name }}.crt 
+            dest=/etc/nginx/{{ app_name }}/{{ app_name }}.crt
   sudo: yes
   
 - name: write SSL nginx configuration
