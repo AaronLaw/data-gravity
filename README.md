@@ -3,15 +3,25 @@ Data Gravity is an experimental Flask application that uses web APIs to
 aggregate data that's important to my professional and personal life.
 
 
-## Goals
-There's several areas of metrics I want to measure that are important to
-the work I'm doing.
+## Measurement types
+There are several important metrics to measure for my work. 
 
 ### Personal Productivity
 * Number of words written per day
 * Stars and forks on important open source projects
-* Some metric around amount of travel schedule (anticipate and prevent 
-  burnout)
+
+### Burnout prevention
+Burnout is caused by high work effort into projects and activities that a
+person does not feel like is making a difference. In my line of work the
+primary activities that cause burnout are exhaustion from extensive travel,
+emails taking precendence over more important tasks, having too many
+meetings overload and major tasks at once which causes constant context 
+switching.
+
+* Percentage of current and upcoming travel days versus days in home city
+* Email load (Gmail API)
+* Average meetings per day, week and month (Google Calendar API)
+
 
 ### General Software Development Interest
 * Twitter and GitHub follower count over time and growth after specific events
