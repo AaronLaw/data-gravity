@@ -23,15 +23,15 @@ switching.
 * Average meetings per day, week and month (Google Calendar API)
 
 
-### General Software Development Interest
+### Tech Event Impact
 * Twitter and GitHub follower count over time and growth after specific events
-* Uniques, sessions and pageviews for technical websites such as 
-  [Full Stack Python](http://www.fullstackpython.com/).
-
-### Tech Events
-* Calculate total number of tech events attended
+* Number of tech events attended (average per week, month and year)
 * Measure Net Promoter Score for technical talks
 * Associate relevant tweets to specific event for later reference
+
+### Website influence
+* Uniques, sessions and pageviews for technical websites such as 
+  [Full Stack Python](http://www.fullstackpython.com/).
 
 
 ## APIs
