@@ -14,3 +14,4 @@ deploy/fabfile.py
 deploy/hosts
 deploy/ssh_conf/
 deploy/ssl_cert/
+celerybeat-schedule

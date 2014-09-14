@@ -17,3 +17,6 @@ export CELERY_RESULT_BACKEND='redis://localhost:6379/0'
 export TWILIO_ACCOUNT_SID=''
 export TWILIO_AUTH_TOKEN=''
 export TWILIO_NUMBER='' # format: +12025551234
+
+# Social accounts
+export GITHUB_USERNAME='' # example: makaimc

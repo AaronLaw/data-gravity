@@ -1,4 +1,5 @@
 import os
+from datetime import timedelta
 from os import environ
 
 basedir = os.path.abspath(os.path.dirname(__file__))
@@ -29,11 +30,19 @@ REDIS_SERVER = get_env_setting('REDIS_SERVER')
 REDIS_PORT = get_env_setting('REDIS_PORT')
 REDIS_DB = get_env_setting('REDIS_DB')
 
-# Celery
-CELERY_BROKER_URL = get_env_setting('CELERY_BROKER_URL')
-CELERY_RESULT_BACKEND = get_env_setting('CELERY_RESULT_BACKEND')
-
 # Twilio API credentials
 TWILIO_ACCOUNT_SID = get_env_setting('TWILIO_ACCOUNT_SID')
 TWILIO_AUTH_TOKEN = get_env_setting('TWILIO_AUTH_TOKEN')
 TWILIO_NUMBER = get_env_setting('TWILIO_NUMBER')
+
+# Celery
+CELERY_BROKER_URL = get_env_setting('CELERY_BROKER_URL')
+CELERY_RESULT_BACKEND = get_env_setting('CELERY_RESULT_BACKEND')
+CELERY_IMPORTS=("datagravity.tasks",)
+CELERYBEAT_SCHEDULE = {
+    'poll-every-hour': {
+        'task': 'datagravity.tasks.github_follower_count',
+        'schedule': timedelta(seconds=5),
+        'args': (get_env_setting('GITHUB_USERNAME'), )
+    }
+}

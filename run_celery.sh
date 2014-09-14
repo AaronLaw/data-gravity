@@ -1,2 +1,2 @@
 #!/bin/bash
-celery worker -l debug -P gevent -A datagravity.celery
+celery worker -l info -P gevent -A datagravity.celery
