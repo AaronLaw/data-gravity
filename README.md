@@ -37,7 +37,10 @@ switching.
 ## APIs
 * [GitHub](https://developer.github.com/v3/)
 * [Google Analytics](https://developers.google.com/analytics/)
+* [Google Calendar API](https://developers.google.com/google-apps/calendar/)
 * [Gumroad](https://gumroad.com/api)
 * [Twitter](https://dev.twitter.com/)
 * [Twilio](https://www.twilio.com/)
+
+
 
