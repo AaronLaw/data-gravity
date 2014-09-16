@@ -42,5 +42,3 @@ switching.
 * [Twitter](https://dev.twitter.com/)
 * [Twilio](https://www.twilio.com/)
 
-
-
