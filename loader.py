@@ -1,3 +1,5 @@
+from datetime import datetime, timedelta
+
 from datagravity.models import User, Follower, Service
 
 def load(db):
@@ -6,3 +8,12 @@ def load(db):
     for s in services:
         db.session.add(s)
     db.session.commit()
+    github = Service.query.all()[0]
+    dt = datetime.now()
+    followers = []
+    for r in range(0, 99):
+        f = Follower(github, 100+r, dt-timedelta(days=(100-r)))
+        followers.append(f)
+        db.session.add(f)
+    db.session.commit()
+

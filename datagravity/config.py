@@ -42,7 +42,7 @@ CELERY_IMPORTS=("datagravity.tasks",)
 CELERYBEAT_SCHEDULE = {
     'poll-every-hour': {
         'task': 'datagravity.tasks.github_follower_count',
-        'schedule': timedelta(seconds=5),
+        'schedule': timedelta(minutes=60),
         'args': (get_env_setting('GITHUB_USERNAME'), )
     }
 }
