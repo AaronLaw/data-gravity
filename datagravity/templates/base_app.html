@@ -8,8 +8,7 @@
     <meta name="author" content="Matt Makai">
     <link rel="icon" href="../../favicon.ico">
     <title>{% block title %}{% endblock %}Data Gravity</title>
-    <link href="/static/css/dg.css" rel="stylesheet">
-    <link href="/static/css/dashboard.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     {% block css_head %}{% endblock %}
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!-- <script src="../../js/ie10-viewport-bug-workaround.js"></script> -->
@@ -24,6 +23,7 @@
     {% block content %}{% endblock %}
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     {% block js_body %}{% endblock %}
     <script type="text/javascript">
         $(document).ready(function() {

@@ -6,9 +6,11 @@ aggregate data that's important to my professional and personal life.
 ## Measurement types
 There are several important metrics to measure for my work. 
 
-### Personal Productivity
+### Personal productivity
+Productivity in my field is measured by writing, presenting and coding.
+
 * Number of words written per day
-* Stars and forks on important open source projects
+* Stars and forks on in-progress open source projects
 
 ### Burnout prevention
 Burnout is caused by high work effort into projects and activities that a
@@ -29,10 +31,17 @@ switching.
 * Measure Net Promoter Score for technical talks
 * Associate relevant tweets to specific event for later reference
 
-### Website influence
-* Uniques, sessions and pageviews for technical websites such as 
-  [Full Stack Python](http://www.fullstackpython.com/).
 
+### Writing influence
+* Uniques, sessions and pageviews for technical websites such as 
+  [Full Stack Python](http://www.fullstackpython.com/) and blog posts.
+
+
+### Hypothetical (if possible)
+* Current email response time
+* Status and location (useful when I'm traveling and do not 
+  respond immediately to emails)
+* Number of developers helped
 
 ## APIs
 * [GitHub](https://developer.github.com/v3/)
