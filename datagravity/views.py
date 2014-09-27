@@ -7,7 +7,10 @@ from .models import Follower, Service
 
 @app.route('/', methods=['GET'])
 def dashboard():
-    return render_template('dashboard.html')
+    follower_counts = Follower.query.order_by( \
+        Follower.timestamped.desc()).all()
+    print follower_counts
+    return render_template('dashboard.html', follower_counts=follower_counts)
 
 
 @app.route('/app/followers/', methods=['GET'])

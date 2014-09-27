@@ -14,7 +14,6 @@ def github_follower_count(username):
     """
     service = Service.query.filter(Service.name=='GitHub')[0]
     resp = requests.get('https://api.github.com/users/%s' % username)
-    print resp.status_code
     if resp.status_code == requests.codes['OK']:
         f = Follower(service, resp.json()['followers'])
         db.session.add(f)

@@ -13,6 +13,9 @@
               <p>+6 (+9%) in last week</p>
               <p>Top 0.09%</p>
             </div>
+            {% for f in follower_counts %}
+                <div>{{ f.count }}</div>
+            {% endfor %}
             <div class="col-xs-6 col-sm-3 placeholder">
               <h3>Twitter</h3>
               <h2>953</h2>
