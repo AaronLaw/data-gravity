@@ -7,7 +7,7 @@ Jinja2==2.7.3
 MarkupSafe==0.23
 PyYAML==3.11
 SQLAlchemy==0.9.7
-Werkzeug==0.9.6
+Werkzeug==0.15.3
 amqp==1.4.6
 ansible==1.7.1
 anyjson==0.3.3
