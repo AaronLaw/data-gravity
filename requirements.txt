@@ -13,7 +13,7 @@ ansible==1.7.1
 anyjson==0.3.3
 argparse==1.2.1
 billiard==3.3.0.18
-celery==3.1.13
+celery==5.2.2
 certifi==14.05.14
 ecdsa==0.11
 gevent==1.0.1
